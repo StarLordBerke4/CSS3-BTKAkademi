@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Seçici İşlemleri </title> 
+        <meta name="utf-8">
+        <style>
+            /*Komut Seçici Örneği*/
+            h1 {
+                color: blue;
+                font-size: 55px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+            }
+
+                /*Grup Seçici Örneği*/
+            h2,p {
+                color: blueviolet;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+                /*Evrensel Seçici Örneği*/
+            * {
+                color: aqua;
+                font-size: 18px;
+            }
+
+                /* Tekil (ID) Seçici Örneği */
+            #yesil {
+                color: green;
+                font-size: 16px;
+            }
+
+            #kırmızı {
+                color: red;
+                font-size: 16px;
+            }
+
+                /*Sınıf (Class) Seçici Örneği*/
+            .pembe {
+                color: pink;
+                font-weight: bold;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+                /*Komut ve Sınıf Seçici Örneği*/
+            p.kahverengi {
+                color: brown;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            p.turuncu {
+                color: orange;
+                font-size: 20px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Komut Seçici Uygalamsı </h1>
+        <h2> Grup Seçici Uygulaması </h2>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio modi vitae totam inventore, quisquam impedit.</p>
+        <br>
+        <br>
+        <h3 id="yesil"> Tekil (İD) Seçici Uygulaması </h3>
+        <p id="kırmızı"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <br>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, perferendis, a praesentium recusandae error facere quasi voluptatem sint ducimus ut eveniet porro modi deserunt delectus rerum, consequuntur eos. Similique, quas.</p>
+        <br>
+        <br>
+        <h2 class="pembe"> Class (Sınıf) Seçici Uygulaması</h2>
+        <p class="pembe">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusantium! Minus deleniti quae molestiae fugiat assumenda iure exercitationem laudantium natus, non sapiente ipsum asperiores enim nulla aliquid pariatur odio? Magnam.</p>
+        <br>
+        <br>
+        <h3> Evrensel Seçici Uygulaması </h3>
+        <h4> Komut ve Sınıf Seçici Uygulaması </h4>
+        <p class="kahverengi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi amet molestiae reiciendis nesciunt tempora quia illum excepturi voluptate nisi. Fugiat repellat similique porro, provident debitis laboriosam distinctio unde saepe aperiam.</p>
+        <br>
+        <p class="turuncu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, incidunt.</p>
+        
+    </body>
+</html>
+
+<!-- 
+Seçici Özellikleri
+==================
+
+Komut = Tek bir HTML komutunu seçer.  p {}
+Grup = Birden fazla HTML komutunu seçer. p,h1,h2 {}
+* = Tüm HTML komutlarını seçer.
+#id = Belli bir #id değerine sahip komutu seçer.
+.class = Belli bir .class değerine sahip komutları seçer.
+Komut.class = Belli bir .class değerine sahip belli bir Komut’u seçer.
+Pseudo-class = Belli bir duruma sahip HTML komutunu seçer.
+Özellik = Belli bir özelliğe sahip HTML komutunu seçer.
+-->
