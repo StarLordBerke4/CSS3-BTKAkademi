@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Kutu Modeli</title> 
+        <meta name="utf-8">
+        <style>
+             /*
+                Tek satırda kutu kenarlığının özelliklerini belirlememiz mümkündür.
+
+                border: solid 10px red;
+
+                */
+
+            #kutu {
+                
+                border-style: solid;
+                border-width: 5px;
+                border-color: blueviolet;
+                border: solid 10px red;
+                
+            }
+
+            #kutu2 {
+                /*Parametre sayısını arttırarak kutunun her bir kenarına farklı özellik uygulamak mümkündür.*/
+
+                border-style: solid double dotted dashed;
+                border-width:  5px 10px 15px 20px;
+                border-color: red blue navajowhite green;
+
+            }
+
+            #kutu3 {
+                /*Parametre sayısını arttırarak kutunun her bir kenarına farklı özellik uygulamak mümkündür.*/
+
+                border-style: solid;
+                border-width: 10px 20px;
+                border-color: red blue navajowhite green;
+
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="kutu">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Nemo facere voluptas veniam consequatur modi consequuntur error <br> dignissimos ea facere voluptas laudantium nam minus, <br> perspiciatis tempora veritatis dolore aliquam dolorem omnis <br> laudantium nam minus et ut.
+
+        </div>
+
+        <br>
+        <br>
+
+        <div id="kutu2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Nemo facere voluptas veniam consequatur modi consequuntur error <br> dignissimos ea facere voluptas laudantium nam minus, <br> perspiciatis tempora veritatis dolore aliquam dolorem omnis <br> laudantium nam minus et ut.
+
+        </div>
+
+        <br>
+        <br>
+
+        <div id="kutu3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Nemo facere voluptas veniam consequatur modi consequuntur error <br> dignissimos ea facere voluptas laudantium nam minus, <br> perspiciatis tempora veritatis dolore aliquam dolorem omnis <br> laudantium nam minus et ut.
+
+        </div>
+        
+    </body>
+</html>
+
+<!--
+Kutu Kenarları
+==============
+
+border-style:  none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset gibi özellikler kullanılarak kutu kenarlıklarını özelleştirmemiz sağlanır.
+
+border-width:  1px | 2px | 3px | 4px | 5px gibi  özellikler kullanılarak kutu kenarlıklarının kalınlığını ayarlayabiliriz.
+
+border-color: Kutu kenarlıklarının rengini değiştirebiliriz.
+
+
+
+-->
