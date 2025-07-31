@@ -19,7 +19,7 @@ Bu repoyu "BTK Akademi | CSS3 ile Web Geliştirme Eğitimi" Projelerimi ve Ders 
 ### 🎨 CSS Nedir?
 <p>CSS (Cascading Style Sheets), HTML ile oluşturulan web içeriklerinin görsel olarak biçimlendirilmesini sağlayan stil tanımlama dilidir. Tim Berners-Lee'nin geliştirdiği HTML'in sınırlı görsel düzenleme olanaklarına çözüm olarak geliştirilen CSS, içerik ile sunumu birbirinden ayırır. Bu sayede web sayfalarının estetik, okunabilir ve kullanıcı dostu olması sağlanır.</p>
 
-<a href=""><img align="center" src="https://github.com/StarLordBerke4/HTML5-BTKAkademi/blob/main/%C4%B0mages/HTML.jpg" alt="html" width="1100"/></a>
+<a href=""><img align="center" src="https://github.com/StarLordBerke4/CSS3-BTKAkademi/blob/main/G%C3%B6rseller/sta-je-css.png" alt="html" width="1100"/></a>
 
 <p>CSS, bir web sitesinin renklerinden yazı tipine, düzeninden geçiş animasyonlarına kadar pek çok tasarım unsurunu kontrol etme imkânı tanır. Web tasarımının temel yapı taşı olan bu dil, geliştiricilere ve tasarımcılara sade ve sürdürülebilir kod yapılarıyla profesyonel arayüzler oluşturma esnekliği sunar. </p>
 
