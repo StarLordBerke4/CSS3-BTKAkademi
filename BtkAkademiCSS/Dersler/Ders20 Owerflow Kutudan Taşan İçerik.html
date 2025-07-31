@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>Owerflow Kutudan Taşan İçerik </title> 
+        <meta name="utf-8">
+        <style>
+            #kutu {
+                width: 100px;
+                height: 100px;
+                border: deeppink solid 5px;
+                overflow: hidden;
+            }
+
+            #kutu2 {
+                width: 150px;
+                height: 150px;
+                background-color: yellow;
+                border: cyan 4px solid;
+                overflow: scroll;
+            }
+
+            #kutu3 {
+                width: 100px;
+                height: 100px;
+                border: purple solid 5px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="kutu">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, temporibus voluptates? Iusto dolore quaerat, sit animi autem corrupti veniam voluptate unde tenetur, impedit doloremque laudantium exercitationem fuga alias nihil repellat.
+        </div>
+
+        <br>
+        <br>
+
+        <div id="kutu2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, temporibus voluptates? Iusto dolore quaerat, sit animi autem corrupti veniam voluptate unde tenetur, impedit doloremque laudantium exercitationem fuga alias nihil repellat.
+        </div>
+
+        <br>
+        <br>
+
+        <div id="kutu3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, temporibus voluptates? Iusto dolore quaerat, sit animi autem corrupti veniam voluptate unde tenetur, impedit doloremque laudantium exercitationem fuga alias nihil repellat.
+        </div>
+    </body>
+</html>
+
+<!--
+Kutudan Taşan İçeriğinin Ayarlanması
+====================================
+
+Eğer küçük bir kutunuz varsa ve içine alabileceğinden daha fazla içerik koyarsanız adına "overflow /taşma "denilen olay meydana gelir.
+
+"overflow" özelliği ile taşan içeriğin durumu belirlenebilir.
+
+Özellik ve Değer
+
+overflow:visible; Varsayılan olarak bu değer kullanılır. Eğer içerik kutu içine sığmazsa taşan kısım alttan devam eder ve ziyaretçiye gösterilir.
+
+overflow:hidden; İçerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez.
+
+overflow:scroll; İçerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez ama bir kaydırma çubuğu ile taşan içeriğin görüntülenmesi sağlanır.
+
+overflow:auto; Eğer taşma olursa kaydırma çubuğu gösterilir ve taşan içerik kaydırma çubuğu ile görüntülenebilir.
+
+-->

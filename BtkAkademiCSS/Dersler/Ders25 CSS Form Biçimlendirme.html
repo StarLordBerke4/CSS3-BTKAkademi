@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Form Biçimlendirme </title> 
+        <meta name="utf-8">
+        <style>
+            #formkutusu {
+                border: darkmagenta solid 2px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: bisque;
+            }
+
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: blue;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            input {
+                border: darkmagenta solid 2px;
+                color: blueviolet;
+                padding: 5px;
+                margin: 5px;
+                background-color: cyan;
+            }
+
+            input:focus {
+                background-color: pink;
+            }
+
+            #formkutusu2 {
+                border: burlywood solid 2px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: bisque;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="formkutusu">
+            <form action="">
+                <table>
+                    <tr><td>Ad Soyad:</td><td><input type="text"></td></tr>
+                    <tr><td>Yaş:</td><td><input type="number"></td></tr>
+                    <tr><td></td><td><input type="submit" value="Gönder">
+                    <input type="reset" value="Temizle"></td></tr>
+                </table>
+            </form>
+        </div>
+<br><br>
+        <div id="formkutusu2">
+            <form action="">
+                <table>
+                    <tr>
+                        <th>İletişim Formu</th>
+                    </tr>
+                    <tr><td>Ad Soyad:</td><td><input type="text"></td></tr>
+                    <tr><td>Yaş:</td><td><input type="number"></td></tr>
+                    <tr><td>Email:</td><td><input type="email"></td></tr>
+                    <tr><td>Telefon:</td><td><input type="tel"></td></tr>
+                    <tr><td>Web Sitesi:</td><td><input type="url"></td></tr>
+                    <tr><td>Mesaj:</td><td><textarea cols="23" rows="5"></textarea></td></tr>
+                    <br>
+                    <tr><td></td><td><input type="text" value="Gönder">
+                    </td></tr>
+                    <tr><td></td><td><input type="reset" value="Temizle"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+
+<!--
+Formların Biçimlendirilmesi
+===========================
+
+• Form elemanları kutular gibi biçimlendirilir.
+• Form elemanının içi ve kenarları biçimlendirilebilir.
+• Form elemanlarının içindeki metinlerbiçimlendirilebilir.
+• Formlardaki onay ve iptal butonları biçimlendirilebilir.
+• Konu tekrarı ve uygulama için aşağıdaki linki kullanabilirsiniz:
+
+- https www.w3schools.com/css/css_form.asp
+
+-->

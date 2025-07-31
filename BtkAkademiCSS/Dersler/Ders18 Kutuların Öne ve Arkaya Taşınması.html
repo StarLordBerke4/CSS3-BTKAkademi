@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title> Kutuların Öne ve Arkaya Hizalanması </title> 
+        <meta name="utf-8">
+        <style>
+            div {
+                border-style: solid;
+                border-width: 5px;
+            }
+
+            #buyuk {
+                width: 300px;
+                height: 200px;
+                background-color: yellowgreen;
+                border-color: brown;
+                z-index: 0;
+              
+            }
+
+            #kucuk {
+                width: 150px;
+                height: 50px;
+                background-color: cyan;
+                border-color: blueviolet;
+                position: relative;
+                left: 50px;
+                top: -50px;
+                z-index: -1;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="buyuk">
+            büyük kutu
+
+        </div>
+
+        <div id="kucuk">
+            küçük kutu
+        </div>
+
+    </body>
+</html>
+
+<!--
+Kutuların Öne ve Arkaya Taşınması
+=================================
+Kutuların öne veya arkaya taşınması için "z index" özelliği kullanılır.
+
+Daha yüksek "z index" değerine sahip olan daha önde görünür.
+-->

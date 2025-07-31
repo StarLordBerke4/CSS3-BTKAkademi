@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title> CSS Tablo Biçimlendirme </title> 
+        <meta name="utf-8">
+        <style>
+            table {
+                border-collapse: collapse;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 14px;
+                background-color: cyan;
+                border: brown 6px solid;
+                width: 600px;
+                height: 300px;
+            }
+
+            th {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                color: red;
+                background-color: antiquewhite;
+                text-align: center;
+                border: 4px firebrick solid;
+            }
+
+            td {
+                text-align: center;
+                font-weight: bold;
+                border: 4px blueviolet solid;
+            }
+
+            </style>
+    </head>
+
+    <body>
+        <table>
+            <tr><th>Ad Soyad</th>
+                <th>Yaş</th>
+                <th>Meslek</th>
+                <th>Doğum Tarihi</th>
+            </tr>
+            <tr><td>Buğra Yiğit Öztürk</td>
+            <td>21</td>
+            <td>Halkla İlişkiler</td>
+            <td>2004</td>
+            </tr>
+            <tr><td>Berke Mert Öztürk</td>
+            <td>27</td>
+            <td>Yönetim Bilişim Sistemleri</td>
+            <td>1998</td>
+            </tr>
+            <tr><td>Serpil Öztürk</td>
+            <td>42</td>
+            <td>Maliye</td>
+            <td>1976</td>
+            </tr>
+            <tr><td>Oktay Öztürk</td>
+            <td>55</td>
+            <td>Meteoroloji Mühendisliği</td>
+            <td>1987</td>
+            </tr>
+            <tr><td>Osman Kozan</td>
+            <td>26</td>
+            <td>Uluslararası İlişkiler</td>
+            <td>1997</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!--
+CSS Tablo biçimlendirme
+=======================
+
+Tablo biçimlendirmede "table , tr , td , th , caption thead , tbody , ve tfoot" etiketlerine ayrı ayrı CSS kodları uygulanabilir.
+
+Hücre içindeki metinleri hizalamak için aşağıdaki özellikler kullanılır:
+•text-align
+•vertical-align
+
+Eğer iki çizgi şeklinde görünen kenarlıkları tek çizgiye dönüştürmekistiyorsanız "border collapse:collapse; " komutunu kullanmalısınız.
+
+Tablo veya hücrelerde ardalan işlemleri için
+•background-color
+•background-image
+
+-->

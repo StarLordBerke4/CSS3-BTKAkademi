@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Tepkisel Responsive Sayfa Tasarımı </title> 
+        <meta name="utf-8">
+        <meta name="viewport" content="width=device width, initial scale=1.0">
+        <style>
+            img {
+                width: 300px;
+                height: 200px;
+                border: brown solid 4px;
+                object-fit: contain;
+            } 
+
+            @media screen and (max-width: 400px) {
+                body {
+                    background-color: yellow;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="img/bayrak.jpg" alt="bayrak">
+    </body>
+</html>
+
+<!--
+Tepkisel Web Sayfaları
+======================
+• Kullanılan cihaza göre boyut ve görünüm değiştiren sayfalara tepkisel / responsive sayfa denir.
+• Bu özellik sayesinde sayfalar cep telefonu, tablet veya PC’de düzgün bir şekilde görüntülenebilir.
+
+Görüş Alanı (Viewport)
+======================
+• Web sayfamızın görünen alanına görüş alanı / viewport denir.
+• Eskiden web sayfaları PC ekranına göre tasarlanırdı, bu nedenle sayfalar cep telefonu ve tabletlerde kötü görünebiliyordu.
+• HTML5 ile birlikte "viewport" özelliği geldi. Bu özellik sayesinde web sayfası ekran boyutuna tepki verebiliyor:
+
+<meta name="viewport" content="width=device width, initial scale=1.0">
+
+Css Ölçü Birimleri
+==================
+Sayfa tasarımında sıklıkla kullanılan ölçü birimleri aşağıdaki gibidir:
+
+Mutlak ölçü birimleri:
+======================
+•px (
+•pt (
+
+Göreceli ölçü birimleri:
+=======================
+•%(yüzde, içinde bulunduğu nesneye
+•em (oran, HTML komutunun font boyutuna
+
+Nesne Sığdırma
+==============
+Resim, video vb. elemanların belirlenen ölçü içine ne şekilde yerleştirileceğini belirlemek için "object fit" özelliği kullanılır.
+
+img {
+width: 3 00px
+height: 1 00px
+object fit: none;
+
+Bu özelliğin aldığı değerler aşağıdaki gibidir:
+•none : Boyut
+•fill : Varsayılan değer. İçinde bulunduğu nesnenin boyutunu alır; Genişlik ve yükseklik kutuya sığacak şekilde değişir.
+•contain : En boy oranı korunarak içinde bulunduğu nesneye göre boyut değiştirir.
+•cover : En boy oranı korunarak içinde bulunduğu nesneye göre boyut değiştirir, kutu içine sığmak için resim kırpılır.
+
+=========================================
+
+CSS Kod Sorgusu
+===============
+Belli şartlar sağlandığında belli CSS kodlarını çalıştırmak için "@media" komutu kullanılır.
+• Tarayıcı max. 400px ise (400px’den küçükse) arkaplan rengi sarı olsun:
+
+ör;
+
+@media only screen and (max width: 4 00px ) {
+body {
+background color: yellow
+    }
+}
+-->

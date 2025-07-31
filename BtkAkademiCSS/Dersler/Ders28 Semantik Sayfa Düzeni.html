@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>Semantik Sayfa Düzeni </title> 
+        <meta name="utf-8">
+        <style>
+
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                /*Kutu genişliklerini sabit tutumaya yarar "box-sizing: border-box;" komutu.*/
+            }
+
+            #depo {
+                border: 3px pink solid;
+                width: 90%;
+                max-width: 500px;
+                margin: auto;
+
+            }
+
+            #logo {
+                border: green dashed 3px;
+                width: 100%;
+                height: 50px;
+            }
+
+            #menu {
+                border: brown dashed 3px;
+                width: 100%;
+                height: 50px;
+                background-color: yellowgreen;
+            }
+
+            #icerik {
+                border: gold dotted 3px;
+                width: 70%;
+                min-height: 500px;
+                background-color: grey;
+                float: left;
+            }
+
+            #yanmenu {
+                border: blue solid 3px;
+                width: 30%;
+                min-height: 500px;
+                float: right;
+                background-color: aqua;
+            }
+
+           #altmenu {
+                border: red solid 3px;
+                width: 100%;
+                height: 50px;
+                background-color: pink;
+                float: left;
+           }
+        </style>
+    </head>
+
+    <body>
+        <div id="depo">
+            <header id="logo">
+                <!-- Başlık Bilgisi Gelir-->
+                 LOGO
+            </header>
+
+            <nav id="menu">
+                <!-- Anamenü Buraya Gelecek-->
+                 ANAMENÜ
+            </nav>
+
+            <section id="icerik">
+                <article>
+                    <!-- Buraya İçerik Gelecek-->
+                     İÇERİK
+                </article>
+
+                <article>
+                    <!-- Buraya İçerik Gelecek-->
+                </article>
+            </section>
+
+            <aside id="yanmenu">
+                <!-- Buraya İçerik Gelecek-->
+                 YAN MENÜ
+            </aside>
+
+            <footer id="altmenu">
+                <!-- Buraya İçerik Gelecek-->
+                 ALT MENÜ
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!--
+Semantik Sayfa Düzeni
+=====================
+<article>: Yorum, haber, forum gönderisi, blog gönderisi, müzik veya video gibi içerikleri kapsar.
+<section>: Genelde benzer konuyasahip birden fazla <article> etiketini bir araya toplamak için kullanılır.
+<header>: Bir sayfanın, makalenin veya bölümün başlık bilgisini kapsar.
+<nav>: Sayfa içine veya sayfa dışına link vermek için oluşturulan menüleri kapsar.
+<aside>: Sayfaların sol ya da sağ kenarında bulunan menü v.b . içerikleri barındıran bölümdür.
+<footer>: Herhangi bir sayfanın, makalenin, bölümün veya menünün en altında bulunur ve genelde en yakın içeriğin iletişim ve telif hakkı bilgilerini barındırır.
+<figure>: Fotoğraf, şekil, illüstrasyon gibi içerikleri ve bu içeriklerle ilgili başlık bilgisini barındırır.
+
+    Not:
+Web sayfalarının küçük ekranlarda da düzgün görünebilmesi için tümiçeriklerin kutu boyutu değişebilen genişlikte ayarlanabilir. 
+
+Bunun için "width" yerine "max-width" özelliği kullanılır.
+• Kutuyu sayfaya ortalamak için margin: auto ; komutu kullanılır.
+
+div {
+max width: 500px;
+margin: auto;
+border: 3px solid #73AD21
+}
+-->

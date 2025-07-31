@@ -1,0 +1,78 @@
+ /* 2.Adım: Kutu genişliğinin sabitlenmesi. */
+/* "Box Sizing" Özelliği ile kutu boyutlarını sabitledik. Ayrıca; "Margin" ve "Padding" değerlerinide 0'ladık. */
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+        /* 3.Adım: Sütün CSS Kodlarının Yazılması*/
+
+        /* (100/12)= 8.33% ==) Bir Sütün Genişliği*/
+
+            /*Kutu Genişlikleri*/
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+         /* 4.Adım: Sütünların Sola Yaslanması*/
+
+         /* "col-" sınıfı ile başlayan bütün html etiketlerini seçiyoruz. */
+
+            [class*="col-"]
+            {
+                float: left;
+                padding: 15px;
+                border: 3px solid rgb(252, 82, 3);
+            }
+
+        /* 5. Adım: Satırların temizlenmesi */
+
+        /* Satır içeriklerini temizletip tablo gibi gösterelim. */
+
+            /*
+            Not:
+                Col= Sütün
+                Row= Satır
+            */
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* 6.Adım: Küçük Ekranlarda Uyum */
+
+        /*Cep telefonlarında her kutu satırı %100 kaplasın.
+        768 px den küçük ekranlarda kutu genişliği 100% olsun.
+        */
+
+            @media screen and (max-width: 768px) {
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+
+        /* 7.Adım: Tepkisel Resim Oluşturma* /
+
+        /* Burdaki amaç; resmin bulunduğu kutunun genişliğini baz alması olacaktır. */
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        /* 8.Adım: Satır ve Kutuların Olulturulması */
+

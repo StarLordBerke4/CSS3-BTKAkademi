@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Sablon HTML Sayfasi </title> 
+        <meta name="utf-8">
+        <style>
+            /*İlk Harf Değikliği İçin;*/
+            p::first-letter {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color:blue;
+                font-size: 30px;
+            }
+
+            /*İlk Satır Değiştirme;*/
+            P::first-line {
+                color: orange;
+            }
+
+            /* Metinin Başına veya Ardına Resim Ekleme Uygulaması*/
+            h1::after {
+            content: url(/Dersler/img/mutluelma.png);
+            }
+
+            h1::before {
+            content: url(/Dersler/img/mutluelma.png);
+            }
+
+            /*Madde imlerinin Rengini ve Boyutunu Değiştirme*/
+            ::marker { 
+                color: red;
+                font-size: 20px;
+            }
+
+            /*Mause ile Seçtiğimiz Nesnelerin Renginin Değişmesi*/
+            ::selection {
+                background-color: yellow;
+                color: red;
+                font-weight: bolder;
+            }
+                
+        </style>
+    </head>
+
+    <body>
+        <h1> En Büyük Başlık </h1>
+        <p>Aorem ipsum dolor sit amet consectetur adipisicing elit. Eos nam cum inventore cumque culpa odio nobis qui ipsam itaque, nemo laboriosam mollitia ratione. Sit voluptatibus delectus dolorum est aspernatur ipsum?</p>
+        <br>
+        <p>Borem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, harum. Veniam earum unde commodi aut sit reprehenderit vero maxime ut exercitationem cumque, aspernatur vel libero facere quae officiis harum eos!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore aliquid iste ipsa deserunt minima autem alias odio! Pariatur non corporis nesciunt totam culpa officia ea possimus. Nesciunt, consequatur illo.</p>
+        <br>
+        <br>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+          
+          <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+          </ol>
+        
+    </body>
+</html>

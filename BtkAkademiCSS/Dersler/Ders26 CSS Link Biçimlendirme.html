@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <title>CSS Link Biçimlendirme </title> 
+        <meta name="utf-8">
+        <style>
+            nav {
+                width: %80;
+                height: 50px;
+                border: red solid 2px;
+                background-color: yellow;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+
+            }
+
+            a {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: bolder;
+                
+            }
+
+            a:link {
+                color: red;
+            }
+
+            a:visited {
+                color: blue;
+            }
+
+            a:active {
+                color: black;
+            }
+
+            a:hover {
+                color: blueviolet;
+                text-decoration: underline;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="#">Anasayfa</a> |
+            <a href="#">Hakkımda</a> |
+            <a href="#">Portfolyo</a>|
+            <a href="#">İletişim</a>
+        </nav>
+    </body>
+</html>
+
+<!--
+Link Biçimlendirme
+==================
+Linkler metinler gibi biçimlendirilebilir. Linklerin farklı durumları için aşağıdaki özellikler kullanılır:
+
+•a:link (ziyaret edilmemiş
+•a:visited ziyaret edilmiş link)
+•a:hover (fare link
+•a:active fare tıkladığında
+
+-->
