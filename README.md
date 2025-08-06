@@ -31,3 +31,9 @@ Bu repoyu "BTK Akademi | CSS3 ile Web Geliştirme Eğitimi" Projelerimi ve Ders 
 <p>Genel olarak bu kurs, web tasarımı konusunda güçlü bir temel oluşturmama yardımcı oldu ve gelecekteki projelerimde görsel olarak etkileyici, kullanıcı dostu web siteleri geliştirebilmem için bana yol gösterici bir rehber oldu.</p>
 
 ### ⚙️ Sertifikam
+<a href=""><img align="center" src="https://github.com/StarLordBerke4/CSS3-BTKAkademi/blob/main/G%C3%B6rseller/CSS_Temelleri_Sertifika.jpg" alt="Sertifika" width="1100"/></a>
+
+- <b>Sertifika Adı:</b> CSS Temelleri
+- <b>Sertifika No:</b> rKjhGV4aMJ
+- <b>Sertifika URL:</b> https://drive.google.com/file/d/11NSF-Ciz964MoepLXpeoYfeERlVVF5dE/view?usp=sharing
+- <b>Linkedin Profil URL:</b> https://www.linkedin.com/in/starlordberke/
