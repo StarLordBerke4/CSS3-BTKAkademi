@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Sayfa Margin ve Padding değerlerini sıfırladık. Kutu boyutlarını "box-sizing" komutu ile sabitledik.*/
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 49%;}
+.col-7{width: 56.66%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/*Izgara sistemine göre kutu genişliklerini belirledik */
+
+.row {
+    /* border: blue solid 2px; */
+    background-color: aquamarine; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Satırlar*/
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Satırların Yan yana gelmesi */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* tepkisel resim */
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid blueviolet; */
+    background-color: blanchedalmond;
+    border-radius: 6px;
+}
+
+/* "col-" yasla */
+ 
+@media screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+    
+/* 768px den küçük ekranlarda kutu genişliği %100 olsun */
+
+#ust {
+    min-height: 100px;
+}
+
+#menu {
+    min-height: 50px;
+}
+
+#orta {
+    min-height: 400px;
+}
+
+#altmenu {
+    min-height: 50px;
+}
+
+/*Kutu Yükseklikleri*/
+
+#ikon {
+    width: 50px;
+    float: right;
+    margin-right: 5px;
+}
+
+/*Sosyal medya ikonları*/
+
+#menu #anamenu ul {
+    list-style-type: none;
+}
+
+#menu #anamenu ul li {
+    border: 3px solid blue;
+    width: 25%;
+    float: left;
+    background-color: rgb(204, 123, 24);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+/* Anamenü */
+
+@media screen and (max-width: 500px) {
+    #menu #anamenu ul li {
+        width: 100%;
+    }
+}
+
+/* Menülelerin tepkisel hale getirilmesi*/
+
+#menu #anamenu a {
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Anamenü Linkleri*/
+
+#menu #anamenu a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*Fare linklerin Üzerine gindince =) Hover */
+
+#menu #anamenu a:active {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+#menu #anamenu a:visited {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+/*Footer bölümündeki "altmenü" linklerin düzenlenmesi*/
+
+#alt #altmenu p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
